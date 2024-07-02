@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.hire-me {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hire-me:hover {
+    background-color: #1c86ee;
+}
+
+h2, h3 {
+    color: #ffffff;
+}
+
+p, ul, a {
+    color: #b0b0b0;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #444444;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;    
+}
+
+nav {
+    position:fixed;
+    top: 0;
+    left: 2%;
+    height: 100%;
+    width: 60px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+    transition: width 0.3s;
+}
+
+.menu-toggle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.menu-icon::before {
+    top: -10px;
+}
+
+.menu-icon::after {
+    top: 10px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.menu-list li {
+    margin: 15px 0;
+}
+
+.menu-list a {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.icons {
+    width: 20px; 
+    height: 20px;
+    /*background-color:rgb(255, 212, 212); */
+    border-radius: 20%;
+}
+
+.contact-info {
+    padding: 0.5%;
+    width: 35%;
+    background-color:rgb(230, 230, 230);
+}
