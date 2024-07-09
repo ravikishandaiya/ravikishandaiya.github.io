@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -50,18 +50,17 @@ header p {
     cursor: pointer;
 }
 
-
 h2, h3 {
-    color: #ffffff;
+    color: #000000;
 }
 
 p, ul, a {
-    color: #b0b0b0;
+    color: #333333;
 }
 
 section {
     padding: 20px 0;
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid #cccccc;
 }
 
 a {
@@ -105,7 +104,7 @@ nav {
 .menu-icon {
     width: 30px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #000000;
     position: relative;
 }
 
@@ -115,7 +114,7 @@ nav {
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .menu-icon::before {
@@ -142,7 +141,7 @@ nav {
 }
 
 .menu-list a {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.2em;
     text-align: center;
 }
@@ -150,12 +149,13 @@ nav {
 .icons {
     width: 20px; 
     height: 20px;
-    /*background-color:rgb(255, 212, 212); */
     border-radius: 20%;
 }
 
 .contact-info {
     padding: 0.5%;
     width: 350px;
-    background-color:rgb(230, 230, 230);
+    background-color: #f8f8f8;
+    color: #000000;
+    border: 1px solid #cccccc;
 }
