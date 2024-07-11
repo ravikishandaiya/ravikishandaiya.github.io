@@ -7,12 +7,12 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 88%;
     margin: auto;
     padding: 20px;
 }
 
-.header-container {
+.home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,15 +26,16 @@ body {
     width: 250px;
     height: 250px;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
-header h1 {
+home h1 {
     font-size: 2em;
     margin: 0;
     line-height: 1.2;
 }
 
-header p {
+home p {
     font-size: 1.2em;
     margin: 0;
 }
@@ -154,8 +155,46 @@ nav {
 
 .contact-info {
     padding: 0.5%;
-    width: 350px;
+    width: 320px;
     background-color: #f8f8f8;
     color: #000000;
     border: 1px solid #cccccc;
+}
+
+
+header1 {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0px ;
+}
+
+nav1 ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav1 ul li {
+    margin: 0 5px;
+}
+
+nav1 ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav1 ul li a:hover,
+nav1 ul li a.active {
+    border: 2px solid #000;
+    border-radius: 18px;
+    color: white;
+    background-color: #194979;
 }
