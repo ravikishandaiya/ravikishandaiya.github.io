@@ -77,20 +77,6 @@ footer {
     text-align: center;    
 }
 
-nav {
-    position:fixed;
-    top: 0;
-    left: 2%;
-    height: 100%;
-    width: 60px;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    justify-content: center;
-    transition: width 0.3s;
-}
-
 .menu-toggle {
     width: 30px;
     height: 30px;
@@ -162,37 +148,39 @@ nav {
 }
 
 
-header1 {
+header {
     width: 100%;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.167);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     display: flex;
     justify-content: flex-end;
-    padding: 15px 0px ;
+    padding: 11px 0px ;
+    border-radius: 10px;
+    margin-top: 2px;
 }
 
-nav1 ul {
+nav ul {
     display: flex;
     list-style: none;
     margin: 0;
 }
 
-nav1 ul li {
+nav ul li {
     margin: 0 5px;
 }
 
-nav1 ul li a {
+nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     padding: 10px;
 }
 
-nav1 ul li a:hover,
-nav1 ul li a.active {
+nav ul li a:hover,
+nav ul li a.active {
     border: 2px solid #000;
     border-radius: 18px;
     color: white;
