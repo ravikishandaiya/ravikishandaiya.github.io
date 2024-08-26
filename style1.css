@@ -86,6 +86,10 @@ footer {
     cursor: pointer;
     background-color: transparent;
     border: none;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    z-index: 2000;
 }
 
 .menu-icon {
@@ -147,7 +151,6 @@ footer {
     border: 1px solid #cccccc;
 }
 
-
 header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.167);
@@ -157,32 +160,50 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: flex-end;
-    padding: 11px 0px ;
-    border-radius: 10px;
-    margin-top: 2px;
+    padding: 24px 0px;
+    border-radius: 0px;
+    margin-top: 6px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding-right: 20px; /* Prevent collapse with scroll bar */
+    }
 
-nav ul li {
-    margin: 0 5px;
-}
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Hide menu by default on mobile */
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px;
-}
+    nav ul li {
+        margin: 10px 0;
+    }
 
-nav ul li a:hover,
-nav ul li a.active {
-    border: 2px solid #000;
-    border-radius: 18px;
-    color: white;
-    background-color: #194979;
+    nav ul li a {
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .menu-list.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-container {
+        padding: 0 10px;
+    }
+
+    .menu-toggle {
+        left: 20px; /* Keep it on the right side */
+    }
 }

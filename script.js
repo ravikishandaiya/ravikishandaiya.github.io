@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const menuList = document.querySelector(".menu-list");
 
+    // Hide menu list on load (for mobile view)
+    menuList.style.display = "none";
+
     menuToggle.addEventListener("click", function () {
         menuList.style.display = menuList.style.display === "flex" ? "none" : "flex";
     });

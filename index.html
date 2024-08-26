@@ -10,35 +10,21 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <button class="menu-toggle">
+                <div class="menu-icon"></div>
+            </button>
+            <ul class="menu-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <!--
-    <nav>
-        <button class="menu-toggle">
-            <div class="menu-icon"></div>
-        </button>
-        <ul class="menu-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-            
-            <!-- <li><a href="data/ravi_kishan_backend_resume.pdf" target="_blank ">Resume</a></li>
-            
-        </ul>
-    </nav>-->
 
     <div class="home-container" id="home">
         <img src="data/profile_picture.jpg" alt="Profile Picture" class="profile-pic">
@@ -47,12 +33,11 @@
             <p>Hello I'm</p>
             <h1>Ravi Kishan</h1>
             <p>A Backend Developer</p>
-            <p>Work Experience: 2+ Years</p>
+            <p>Work Experience: 3-Years</p>
             <br>
 
             <a href="data/ravi_kishan_backend_resume.pdf" target="_blank "><button class="quick_buttons">Download CV</button></a>
             <a href="#contact"><button class="quick_buttons">Contact Info</button></a>
-
         </home>
     </div>
 
@@ -94,7 +79,7 @@
 
         <section id="experience">
             <h2>Experience</h2>
-            <h3>HAPPAY (CRED) • Bengaluru, India (Remote) • 03/2022 — 08/2023</h3>
+            <h3>HAPPAY (CRED) • Bengaluru, India (Remote) • 03/2022 — Present</h3>
             <p>Backend Developer</p>
             <ul>
                 <li>Enhanced user experience by developing drill-down functionality, granular charts, user session management, and user and role-based dashboards.</li>
@@ -110,6 +95,44 @@
                 <li>Completed AWS Certified Cloud Practitioner course and gained hands-on experience with essential AWS services.</li>
                 <li>Acquired proficiency in GoLang and REST APIs.</li>
             </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>Text-to-Image Generation Project</h3>
+                <p><strong>Technologies:</strong> Django, Python, Celery, Redis, Docker, AWS</p>
+                <ul>
+                    <li>Developed a text-to-image generation application using Django and Python, enabling users to create images from text descriptions.</li>
+                    <li>Implemented Celery for parallel processing of image requests, significantly improving performance and scalability.</li>
+                    <li>Utilized Redis as a queue service to manage task distribution and ensure efficient processing.</li>
+                    <li>Containerized the application using Docker, leading to less effort and time to deploy the project.</li>
+                    <li>Deployed the solution on AWS, leveraging cloud infrastructure for scalable and reliable hosting.</li>
+                </ul>
+                <a href="http://ec2-65-2-171-26.ap-south-1.compute.amazonaws.com/" target="_blank">Live Project</a>
+            </div>
+
+            <div class="project">
+                <h3>FTP - File Transfer Protocol</h3>
+                <p><strong>Technologies:</strong> Python, OS Library, Threading</p>
+                <ul>
+                    <li>Designed and implemented a client-server file transfer protocol using Python, demonstrating expertise in system-level programming.</li>
+                    <li>Developed key features including file upload, download, indexed searching, and directory navigation.</li>
+                    <li>Utilized Python’s OS and threading libraries to handle file operations and concurrent tasks efficiently.</li>
+                </ul>
+                <a href="https://github.com/ravikishandaiya/FTP-implementation-in-python" target="_blank">Project Link</a>
+            </div>
+
+            <div class="project">
+                <h3>Ludo Game</h3>
+                <p><strong>Technologies:</strong> C++, Logic, Problem-Solving</p>
+                <ul>
+                    <li>Developed a Ludo game using C++, employing mathematical logic and a pseudo-random number generator.</li>
+                    <li>Showcased strong problem-solving skills and advanced proficiency in C++ programming through game mechanics and logic implementation.</li>
+                </ul>
+                <a href="https://github.com/ravikishandaiya/Ludo-Game-in-cpp" target="_blank">Project Link</a>
+            </div>
         </section>
 
         <section id="skills">
@@ -160,5 +183,7 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
+    </body>
 </html>
+    
+        
