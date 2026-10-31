@@ -1,1 +1,7 @@
 theme: jekyll-theme-slate
+exclude:
+  - .DS_Store
+  - debug.log
+  - v1/.DS_Store
+  - v1/debug.log
+  - v1/icons/index.html

@@ -6,6 +6,22 @@ body {
     padding: 0;
 }
 
+.archive-banner {
+    position: relative;
+    z-index: 100;
+    padding: 14px 60px 14px 20px;
+    background: #eef3ed;
+    color: #344c39;
+    font-size: 14px;
+    line-height: 1.6;
+    border-bottom: 1px solid #d3dfd2;
+}
+
+.archive-banner a {
+    color: #285a3b;
+    font-weight: 600;
+}
+
 .container {
     width: 88%;
     margin: auto;
